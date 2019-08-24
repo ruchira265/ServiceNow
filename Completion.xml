@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:smbbo5="http://DataModel_v5.smbb.t-systems.com" xmlns:urn="urn:com.t-systems.itsm">
+    <SOAP-ENV:Header>
+        <urn:routing messageId="REQ0013672.22387" operation="sendMultiInformation" service="OrderService">
+            <sender id="MSP.REQ0013672" name="TOM"/>
+            <receiver id="MSP.REQ0013672" name="TEST-SN-OM"/>
+            <timestamp create="2019-08-10T10:11:09.381Z"/>
+        </urn:routing>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <smbbo5:MultiInformation>
+            <smbbo5:customerOrderId>
+                <smbbo5:id>MSP.REQ0013672</smbbo5:id>
+                <smbbo5:mainOrderId>MSP.REQ0013672</smbbo5:mainOrderId>
+            </smbbo5:customerOrderId>
+            <smbbo5:notifications>
+                <smbbo5:customerSubOrderId>
+                    <smbbo5:id>MSP.RITM0014583</smbbo5:id>
+                </smbbo5:customerSubOrderId>
+                <smbbo5:notification>
+                    <smbbo5:notificationType>COMPLETION</smbbo5:notificationType>
+                    <smbbo5:notificationDate>2019-08-10T10:11:04.763Z</smbbo5:notificationDate>
+                    <smbbo5:dateList>
+                        <smbbo5:dateType>COMPLETION_DATE</smbbo5:dateType>
+                        <smbbo5:date>2019-08-10T10:11:04.763Z</smbbo5:date>
+                    </smbbo5:dateList>
+                </smbbo5:notification>
+            </smbbo5:notifications>
+            <smbbo5:notificationType>COMPLETION</smbbo5:notificationType>
+        </smbbo5:MultiInformation>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
